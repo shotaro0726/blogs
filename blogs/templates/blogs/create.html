@@ -1,0 +1,12 @@
+{% extends 'blogs/base.html' %}
+
+{% block content %}
+<h1>新しい投稿を追加</h1>
+<section class="post-form">
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit" class="submit">Save</button>
+    </form>
+</section>
+{% endblock %}
